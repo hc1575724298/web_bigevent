@@ -5,7 +5,7 @@
  * @email: 1373842098@qq.com
  * @Date: 2022-06-09 15:58:55
  * @LastEditors: sj
- * @LastEditTime: 2022-06-11 09:42:03
+ * @LastEditTime: 2022-06-11 10:43:51
  */
 
 // 注意：每次调用 $.get() 或 $.post() 或 $.ajax() 的时候，
@@ -25,7 +25,7 @@ $.ajaxPrefilter((options) => {
 
   // 权限校验
   options.complete = (res) => {
-    console.log(res);
+    // console.log(res);
     if (res.responseJSON.message === "身份认证失败！" && res.responseJSON.status === 1) {
       //1.强制清空 token
       localStorage.removeItem('token')
