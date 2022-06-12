@@ -5,7 +5,7 @@
  * @email: 1373842098@qq.com
  * @Date: 2022-06-11 15:39:11
  * @LastEditors: sj
- * @LastEditTime: 2022-06-11 16:51:10
+ * @LastEditTime: 2022-06-11 20:40:07
  */
 $(function () {
   // 1.1 获取裁剪区域的 DOM 元素
@@ -23,7 +23,7 @@ $(function () {
 
   // 点击上传
   $('#btnChooseImage').click(() => {
-    console.log(11);
+    // console.log(11);
     $('#file').click()
   })
 

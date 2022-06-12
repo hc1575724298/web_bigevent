@@ -5,7 +5,7 @@
  * @email: 1373842098@qq.com
  * @Date: 2022-06-09 16:48:54
  * @LastEditors: sj
- * @LastEditTime: 2022-06-11 09:41:56
+ * @LastEditTime: 2022-06-12 15:20:02
  */
 // 获取用户基本信息
 function getUserInfo () {
@@ -60,3 +60,8 @@ $('#btnLogout').click(() => {
   })
 })
 getUserInfo()
+
+// 切换高亮
+function change () {
+  $('#change').addClass('layui-this').next().removeClass()
+}
